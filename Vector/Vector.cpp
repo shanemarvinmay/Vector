@@ -24,14 +24,15 @@ template <class DataType> Vector<DataType>::~Vector()
 template <class DataType> void Vector<DataType>::append(const DataType d)
 {
 //    check if dataItems size is 0 : turn to size 1
-    if( size == 0 )
+    if( size == 0 && capacity == 0 )
     {
-        capacity = 1;
+        dataItems = new DataType[1] ();
+        dataItems[size] = d;
         size = 1;
-        dataItems = new DataType[size] ();
+        capacity = 1;
     }
 //    check if there is any capacity : if capacity == 0 double size
-    if( capacity == 0 )
+    else if( capacity == 0 )
     {
 //        doubling size
         int len = size;
@@ -42,12 +43,21 @@ template <class DataType> void Vector<DataType>::append(const DataType d)
         }
         dataItems = temp;
         capacity = len - size;
+        //    add to last available spot
+        dataItems[size] = d;
+        //    update size and capacity
+        size += 1;
+        capacity -= 1;
+        
     }
-//    add to last available spot
-    dataItems[size] = d;
-//    update size and capacity
-    size += 1;
-    capacity -= 1;
+    else
+    {
+        //    add to last available spot
+        dataItems[size] = d;
+        //    update size and capacity
+        size += 1;
+        capacity -= 1;
+    }
 }
 
 template <class DataType> DataType Vector<DataType>::elementAt(const int idx) const

@@ -20,11 +20,12 @@ int main(int argc, const char * argv[]) {
     cout << "~~~~~~~~~~~~~~~~~~\n" << "TESTING APPEND\n";
     v.append(666);
     v.append(777);
-    cout << "v[0] : " << v.elementAt(0) << " v[1] : " << v.elementAt(1) << endl;
+    v.append(1);
+    cout << "v[0] : " << v.elementAt(0) << " v[1] : " << v.elementAt(1)  << " v[2] : " << v.elementAt(2) << endl;
     /**
      TESTING ELEMENT_AT
      */
     cout << "~~~~~~~~~~~~~~~~~~\n" << "TESTING ELEMENT_AT\n";
-    cout << "v[0] : " << v.elementAt(0) << " v[2] : " << v.elementAt(2) << endl;
+    cout << "v[0] : " << v.elementAt(0) << " v[2] : " << v.elementAt(3) << endl;
     return 0;
 }
