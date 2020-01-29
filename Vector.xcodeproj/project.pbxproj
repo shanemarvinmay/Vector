@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB7318FB23E1EAF7003FC032 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB7318FA23E1EAF7003FC032 /* main.cpp */; };
+		EB73190323E1EBEC003FC032 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB73190123E1EBEC003FC032 /* Vector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		EB7318F723E1EAF7003FC032 /* Vector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Vector; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7318FA23E1EAF7003FC032 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EB73190123E1EBEC003FC032 /* Vector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		EB73190223E1EBEC003FC032 /* Vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				EB7318FA23E1EAF7003FC032 /* main.cpp */,
+				EB73190123E1EBEC003FC032 /* Vector.cpp */,
+				EB73190223E1EBEC003FC032 /* Vector.hpp */,
 			);
 			path = Vector;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB73190323E1EBEC003FC032 /* Vector.cpp in Sources */,
 				EB7318FB23E1EAF7003FC032 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

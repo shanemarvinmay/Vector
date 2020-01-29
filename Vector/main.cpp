@@ -7,9 +7,24 @@
 //
 
 #include <iostream>
+#include "Vector.hpp"
+using namespace std;
+//template <class DataType>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << "Program start!\n";
+    Vector<int>  v;// = new Vector<int>();
+    /**
+     TESTING APPEND
+     */
+    cout << "~~~~~~~~~~~~~~~~~~\n" << "TESTING APPEND\n";
+    v.append(666);
+    v.append(777);
+    cout << "v[0] : " << v.elementAt(0) << " v[1] : " << v.elementAt(1) << endl;
+    /**
+     TESTING ELEMENT_AT
+     */
+    cout << "~~~~~~~~~~~~~~~~~~\n" << "TESTING ELEMENT_AT\n";
+    cout << "v[0] : " << v.elementAt(0) << " v[2] : " << v.elementAt(2) << endl;
     return 0;
 }
